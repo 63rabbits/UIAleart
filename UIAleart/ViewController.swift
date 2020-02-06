@@ -79,7 +79,7 @@ extension ViewController {
         print("pushed Alert(style: alert, 3 Buttons and wait proc)")
         let alert = UIAlertController(
             title: "アラート",
-            message: "３個以上のボタンは縦に並びます。\nこのアラートは裏でプロセスが待ち合わせをしたいます。",
+            message: "３個以上のボタンは縦に並びます。\nこのアラートは裏でプロセスが待ち合わせをしています。",
             preferredStyle: .alert)
 
         self.answer = nil
@@ -126,7 +126,7 @@ extension ViewController : UITextFieldDelegate {
         })
 
         alert.addAction(UIAlertAction(title: "OK", style: .default,
-                                      handler: {action in print("OK") }))
+                                      handler: { action in print("OK") }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel,
                                       handler: { action in print("Cancel") }))
         self.present(alert, animated: true, completion: { print("displayed!!") })
@@ -152,7 +152,7 @@ extension ViewController {
             preferredStyle: .actionSheet)
 
         alert.addAction(UIAlertAction(title: "OK", style: .default,
-                                      handler: {action in print("OK") }))
+                                      handler: { action in print("OK") }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel,
                                       handler: { action in print("Cancel") }))
         self.present(alert, animated: true, completion: { print("displayed!!") })
@@ -173,7 +173,7 @@ extension ViewController {
             preferredStyle: .actionSheet)
 
         alert.addAction(UIAlertAction(title: "OK", style: .default,
-                                      handler: {action in print("OK") }))
+                                      handler: { action in print("OK") }))
         alert.addAction(UIAlertAction(title: "Unknown", style: .default,
                                       handler: { action in print("Unknown") }))
         self.present(alert, animated: true, completion: { print("displayed!!") })
